@@ -3,7 +3,7 @@ const config = {
     profile: {
         name: "RiMoN",
         username: "@raven",
-        avatar: "https://pin.it/7B0wCNWJ0", // Replace with your image URL
+        avatar: "https://user11959.na.imgto.link/public/20260813/img-3627.avif", // Replace with your image URL
         bio: "Digital Creator & UI/UX Designer\nBuilding premium web experiences.",
         verified: true, // Set to false to remove the blue checkmark
         location: "Kolkata , India"
