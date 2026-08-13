@@ -3,10 +3,10 @@ const config = {
     profile: {
         name: "RiMoN",
         username: "@raven",
-        avatar: "https://i.pravatar.cc/300?img=47", // Replace with your image URL
+        avatar: "https://kommodo.ai/i/yebgVPVDjtsqkcWQqt8i", // Replace with your image URL
         bio: "Digital Creator & UI/UX Designer\nBuilding premium web experiences.",
         verified: true, // Set to false to remove the blue checkmark
-        location: "New York, NY"
+        location: "Kolkata , India"
     },
 
     // Social Media Icons (Top Row)
