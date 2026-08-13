@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link in Bio | Premium</title>
+    
+    <!-- SEO & Open Graph Tags -->
+    <meta name="description" content="All my important links in one place.">
+    <meta property="og:title" content="Link in Bio">
+    <meta property="og:description" content="All my important links in one place.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS (CDN for zero-build setup) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: { neon: '#8b5cf6' }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen relative overflow-x-hidden antialiased selection:bg-neon selection:text-white">
+    
+    <!-- Animated Background & Particles -->
+    <div class="animated-bg absolute inset-0 z-0"></div>
+    <canvas id="particle-canvas" class="absolute inset-0 z-0 pointer-events-none"></canvas>
+
+    <!-- Main Content Container -->
+    <main class="relative z-10 max-w-2xl mx-auto px-4 py-12 min-h-screen flex flex-col items-center justify-center fade-in-up">
+        
+        <!-- Header Section -->
+        <header class="text-center w-full mb-8">
+            <div class="relative inline-block mb-4">
+                <img id="profile-img" src="" alt="Profile Picture" class="w-28 h-28 rounded-full object-cover border-2 border-white/20 shadow-[0_0_20px_rgba(139,92,246,0.3)] glass-img transition-transform duration-500 hover:scale-105">
+                <div id="verified-badge" class="absolute bottom-1 right-1 bg-blue-500 text-white text-xs p-1.5 rounded-full hidden border-2 border-gray-900">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+            
+            <h1 id="profile-name" class="text-2xl font-bold tracking-tight mb-1 flex justify-center items-center gap-2"></h1>
+            <p id="profile-username" class="text-neon text-sm font-medium mb-3"></p>
+            
+            <div id="profile-location" class="text-gray-400 text-xs mb-3 hidden">
+                <i class="fas fa-map-marker-alt mr-1"></i> <span id="location-text"></span>
+            </div>
+
+            <p id="profile-bio" class="text-gray-300 text-sm max-w-md mx-auto leading-relaxed whitespace-pre-line"></p>
+        </header>
+
+        <!-- Social Icons Grid -->
+        <div id="social-grid" class="flex flex-wrap justify-center gap-4 mb-10 w-full max-w-md">
+            <!-- Injected via JS -->
+        </div>
+
+        <!-- Links Container -->
+        <div id="links-container" class="w-full max-w-md flex flex-col gap-4 mb-12">
+            <!-- Injected via JS -->
+        </div>
+
+        <!-- Utility Buttons (Share) -->
+        <div class="flex gap-4 mb-8">
+            <button id="share-btn" class="glass-btn px-6 py-2 rounded-full text-sm font-medium flex items-center gap-2 text-gray-300 hover:text-white transition-all">
+                <i class="fas fa-share-nodes"></i> Share Profile
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-gray-500 text-xs text-center mt-auto pb-4">
+            <p>© <span id="year"></span> <span id="footer-name"></span>. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <!-- Custom Cursor -->
+    <div id="cursor" class="hidden md:block pointer-events-none fixed z-50 w-6 h-6 rounded-full border-2 border-neon mix-blend-screen transition-transform duration-100 -translate-x-1/2 -translate-y-1/2"></div>
+    <div id="cursor-dot" class="hidden md:block pointer-events-none fixed z-50 w-1.5 h-1.5 rounded-full bg-neon mix-blend-screen transition-transform duration-75 -translate-x-1/2 -translate-y-1/2"></div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
