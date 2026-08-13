@@ -1,0 +1,39 @@
+const config = {
+    // Profile Information
+    profile: {
+        name: "Jane Doe",
+        username: "@janedoe",
+        avatar: "https://i.pravatar.cc/300?img=47", // Replace with your image URL
+        bio: "Digital Creator & UI/UX Designer\nBuilding premium web experiences.",
+        verified: true, // Set to false to remove the blue checkmark
+        location: "New York, NY"
+    },
+
+    // Social Media Icons (Top Row)
+    // Available icons use FontAwesome classes (fab fa-platform)
+    socials: [
+        { platform: "Instagram", icon: "fab fa-instagram", url: "https://instagram.com" },
+        { platform: "X", icon: "fab fa-x-twitter", url: "https://twitter.com" },
+        { platform: "YouTube", icon: "fab fa-youtube", url: "https://youtube.com" },
+        { platform: "LinkedIn", icon: "fab fa-linkedin-in", url: "https://linkedin.com" },
+        { platform: "TikTok", icon: "fab fa-tiktok", url: "https://tiktok.com" },
+        { platform: "GitHub", icon: "fab fa-github", url: "https://github.com" },
+        { platform: "Email", icon: "fas fa-envelope", url: "mailto:hello@example.com" }
+    ],
+
+    // Main Link Buttons
+    links: [
+        { title: "My Website", icon: "fas fa-globe", url: "https://example.com" },
+        { title: "Portfolio", icon: "fas fa-layer-group", url: "https://example.com/portfolio" },
+        { title: "Latest Video", icon: "fas fa-play-circle", url: "https://youtube.com", highlight: true },
+        { title: "Book a Meeting", icon: "fas fa-calendar-alt", url: "https://calendly.com" },
+        { title: "Shop presets", icon: "fas fa-shopping-bag", url: "https://example.com/shop" },
+        { title: "Donate", icon: "fas fa-heart", url: "https://patreon.com" }
+    ],
+
+    // Page Settings
+    settings: {
+        themeColor: "#8b5cf6", // Violet-500 for neon accents
+        particleCount: 50
+    }
+};
