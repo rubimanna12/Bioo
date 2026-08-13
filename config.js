@@ -1,8 +1,8 @@
 const config = {
     // Profile Information
     profile: {
-        name: "Jane Doe",
-        username: "@janedoe",
+        name: "RiMoN",
+        username: "@raven",
         avatar: "https://i.pravatar.cc/300?img=47", // Replace with your image URL
         bio: "Digital Creator & UI/UX Designer\nBuilding premium web experiences.",
         verified: true, // Set to false to remove the blue checkmark
