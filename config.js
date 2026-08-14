@@ -34,6 +34,6 @@ const config = {
     // Page Settings
     settings: {
         themeColor: "#8b5cf6", // Violet-500 for neon accents
-        particleCount: 150
+        particleCount: 250
     }
 };
