@@ -21,17 +21,9 @@ const config = {
         { platform: "Email", icon: "fas fa-envelope", url: "mailto:hello@example.com" }
     ],
 
-    // Main Link Buttons
-    links: [
-        { title: "My Website", icon: "fas fa-globe", url: "https://example.com" },
-        { title: "Portfolio", icon: "fas fa-layer-group", url: "https://example.com/portfolio" },
-        { title: "Latest Video", icon: "fas fa-play-circle", url: "https://youtube.com", highlight: true },
-        { title: "Book a Meeting", icon: "fas fa-calendar-alt", url: "https://calendly.com" },
-        { title: "Shop presets", icon: "fas fa-shopping-bag", url: "https://example.com/shop" },
-        { title: "Donate", icon: "fas fa-heart", url: "https://patreon.com" }
-    ],
+    
 
-    // Page Settings
+// Page Settings
     settings: {
         themeColor: "#8b5cf6", // Violet-500 for neon accents
         particleCount: 250
